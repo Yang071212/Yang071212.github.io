@@ -1,0 +1,41 @@
+title: Yang 的技术博客
+subtitle: 把学到的知识，写成自己的理解
+description: 记录编程、人工智能与大学学习。C、Python、数学与项目实践笔记。
+author: Yang
+language: zh-CN
+timezone: Asia/Shanghai
+url: https://yang071212.github.io
+root: /
+permalink: posts/:title/
+pretty_urls:
+  trailing_index: false
+  trailing_html: false
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+skip_render:
+  - legacy/**
+new_post_name: :title.md
+default_layout: post
+external_link:
+  enable: true
+  field: site
+  exclude: []
+index_generator:
+  path: ''
+  per_page: 8
+  order_by: -date
+per_page: 10
+pagination_dir: page
+theme: fluid
+highlight:
+  enable: true
+  line_number: true
+prismjs:
+  enable: false
+search:
+  path: local-search.xml
+  field: post
+  content: true

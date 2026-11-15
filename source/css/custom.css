@@ -1,0 +1,11 @@
+/* Ink and paper: quiet pages for study notes. */
+:root { --text-color: #253c36; --link-hover-color: #25735e; }
+body { font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif; }
+.navbar .navbar-brand { letter-spacing: .04em; }
+#subtitle { font-family: "Noto Serif SC", "Songti SC", serif; letter-spacing: .09em; font-weight: 600; }
+.index-header { font-weight: 650; }
+.index-excerpt { line-height: 1.85; }
+.markdown-body { line-height: 1.9; }
+a:focus-visible,button:focus-visible { outline: 3px solid #bb914b; outline-offset: 4px; }
+@media(max-width:600px) { #subtitle { font-size: 1.35rem; letter-spacing: .03em; } }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior: auto!important; animation: none!important; transition: none!important; } }
