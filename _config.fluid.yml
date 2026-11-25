@@ -10,17 +10,19 @@ navbar:
     - { key: '关于', link: '/about/', icon: 'iconfont icon-user-fill' }
 index:
   banner_img: /img/study-banner.svg
-  banner_img_height: 70
-  banner_mask_alpha: 0.15
+  banner_img_height: 53
+  banner_mask_alpha: 0.2
   slogan:
     enable: true
     text: 把学到的知识，写成自己的理解
   auto_excerpt:
     enable: true
     length: 150
+banner:
+  parallax: false
 post:
   banner_img: /img/study-banner.svg
-  banner_img_height: 45
+  banner_img_height: 36
   toc:
     enable: true
   copyright:
@@ -37,6 +39,7 @@ tag:
   banner_img: /img/study-banner.svg
 about:
   banner_img: /img/study-banner.svg
+  banner_img_height: 36
   name: Yang
   intro: 记录编程、人工智能与大学学习
   icons:

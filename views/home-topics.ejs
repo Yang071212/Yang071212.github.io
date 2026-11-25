@@ -1,0 +1,46 @@
+<% if (is_home_first_page()) {
+  const topics = [
+    { name: 'C / Python', detail: '从题解到独立编程', icon: '{}', accent: 'code' },
+    { name: '数学', detail: '微积分与线性代数', icon: '∑', accent: 'math' },
+    { name: 'AI', detail: '机器学习与实验', icon: '✦', accent: 'ai' },
+    { name: '项目实践', detail: '设计、实现与复盘', icon: '▦', accent: 'project' }
+  ];
+%>
+  <div class="blog-hero container">
+    <div class="blog-hero-copy">
+      <h1>把学到的知识，<br>写成自己的理解</h1>
+      <p>编程笔记、数学推导与人工智能实验。</p>
+      <div class="blog-hero-actions">
+        <a class="blog-primary-link" href="#board">阅读最新文章 <span aria-hidden="true">↓</span></a>
+        <a class="blog-secondary-link" href="<%= url_for('archives/') %>">浏览归档 <span class="blog-link-arrow" aria-hidden="true"></span></a>
+      </div>
+    </div>
+    <div class="blog-hero-art" aria-hidden="true">
+      <div class="blog-orbit blog-orbit-outer"></div>
+      <div class="blog-orbit blog-orbit-middle"></div>
+      <div class="blog-orbit blog-orbit-inner"></div>
+      <div class="blog-chip"><span>&lt;/&gt;</span></div>
+    </div>
+  </div>
+
+  <nav class="blog-topics container" aria-labelledby="blog-topics-title">
+    <h2 id="blog-topics-title">按主题阅读</h2>
+    <ul class="blog-topics-list">
+      <% for (const topic of topics) {
+        const category = site.categories.findOne({ name: topic.name });
+        if (!category) continue;
+      %>
+        <li>
+          <a class="blog-topic-<%= topic.accent %>" href="<%= url_for(category.path) %>">
+            <span class="blog-topic-icon" aria-hidden="true"><%= topic.icon %></span>
+            <span class="blog-topic-copy">
+              <strong><%= topic.name %></strong>
+              <span><%= topic.detail %></span>
+            </span>
+            <span class="blog-topic-arrow blog-link-arrow" aria-hidden="true"></span>
+          </a>
+        </li>
+      <% } %>
+    </ul>
+  </nav>
+<% } %>
