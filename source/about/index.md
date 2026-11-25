@@ -2,10 +2,12 @@
 title: 关于这个博客
 layout: about
 ---
-欢迎来到我的技术博客。这里记录编程、人工智能与大学学习。
+我是 Yang，正在学习软件工程。这里收录我的编程和数学笔记，也记录模型实验与项目实践。
 
-我的学习方向：C 语言与 Python、数学基础、人工智能与机器学习、算法与项目开发。
+## 从这里开始
 
-希望每篇笔记都能说明一个问题，留下可复现的例子，并记录下一步的疑问。
+- 刚入门编程，可以从[用 C 循环计算平均值](/posts/c-input-loop/)开始。
+- 想了解怎么记录模型实验，可以读[一次 AI 实验如何验证](/posts/ai-experiment/)。
+- 想把课程、项目和实习放在一张时间表里，可以读[软件工程四年路线](/posts/software-engineering-roadmap/)。
 
-[查看最初的欢迎页](/legacy/) · [GitHub](https://github.com/Yang071212)
+[文章归档](/archives/) · [GitHub](https://github.com/Yang071212) · [最初的欢迎页](/legacy/)
