@@ -59,7 +59,7 @@ fun_features:
 search:
   enable: true
   path: /local-search.xml
-custom_css: /css/custom.css
+custom_css: /css/custom.css?v=home-motion-1
 
 links:
   enable: false
